@@ -1,1 +1,716 @@
-<a data-from-md title='http://www.google.com/' href='http://www.google.com/'>Google</a>
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/katex/katex.css"><script type="application/javascript" src="pluginAssets/mermaid/mermaid.min.js"></script><script type="application/javascript" src="pluginAssets/mermaid/mermaid_render.js"></script><link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>Favorites Bookmarks</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Favorites Bookmarks</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+		::-webkit-scrollbar {
+			width: 7px;
+			height: 7px;
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(100, 100, 100, 0.3); 
+			border-radius: 5px;
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(100, 100, 100, 0.7); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to precvent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		.not-loaded-resource img {
+			width: 1.15em;
+			height: 1.15em;
+			background: white;
+			padding: 2px !important;
+			border-radius: 2px;
+			box-shadow: 0 1px 3px #000000aa;
+		}
+
+		a.not-loaded-resource img {
+			margin-right: .2em;
+		}
+
+		a.not-loaded-resource {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 35rem;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0;
+			border: 0;
+			display: block;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* To make code blocks horizontally scrollable */
+		/* https://github.com/laurent22/joplin/issues/5740 */
+		pre.hljs {
+			overflow-x: auto;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { background-color: white; width: 640px; }
+.mermaid-export-graph { visibility: hidden; } 
+				.joplin-editable:hover .mermaid-export-graph { visibility: visible; }
+				.mermaid-export-graph:hover { background-color: #CBDAF1 !important; }
+/* For styling the rendered Markdown */</style><div id="rendered-md"><p><a data-from-md title='http://www.google.com/' href='http://www.google.com/'>Google</a><br>
+<a data-from-md title='https://chatgpt.com/' href='https://chatgpt.com/'>ChatGPT</a></p>
+<p><a data-from-md title='http://mail.google.com/mail/mu/mp/937/#tl/priority/%5Eu' href='http://mail.google.com/mail/mu/mp/937/#tl/priority/%5Eu'>GMail</a><br>
+<a data-from-md title='https://511on.ca/' href='https://511on.ca/'>511 Maps</a><br>
+<a data-from-md title='http://www.680news.com/toronto-gta-gas-prices/' href='http://www.680news.com/toronto-gta-gas-prices/'>Gas</a><br>
+<a data-from-md title='https://finance.yahoo.com/portfolio/pf_1/view/view_2' href='https://finance.yahoo.com/portfolio/pf_1/view/view_2'>Y! Finance</a></p>
+<p><a data-from-md title='https://www.evernote.com/Login.action?targetUrl=/Home.action' href='https://www.evernote.com/Login.action?targetUrl=/Home.action'>Evernote</a> (<a data-from-md title='https://onlinehtmleditor.dev/' href='https://onlinehtmleditor.dev/'>Editor</a> to preserve spaces)<br>
+<a data-from-md title='https://nrc.canada.ca/en/web-clock/' href='https://nrc.canada.ca/en/web-clock/'>Time</a><br>
+<a data-from-md title='https://www.timeanddate.com/date/dateadd.html' href='https://www.timeanddate.com/date/dateadd.html'>Date Calculator</a><br>
+<a data-from-md title='http://www.theweathernetwork.com/ca/weather/ontario/brampton' href='http://www.theweathernetwork.com/ca/weather/ontario/brampton'>Weather</a><br>
+<a data-from-md title='http://www.accuweather.com/en/ca/brampton/l6p/weather-forecast/48237_pc' href='http://www.accuweather.com/en/ca/brampton/l6p/weather-forecast/48237_pc'>Accuweather</a> (<a data-from-md title='http://m.accuweather.com/en/ca/brampton/l6v/weather-forecast/49568' href='http://m.accuweather.com/en/ca/brampton/l6v/weather-forecast/49568'>mobile</a>)<br>
+<a data-from-md title='https://messages.google.com/web' href='https://messages.google.com/web'>TxtMsg</a><br>
+<a data-from-md title='http://web.whatsapp.com/' href='http://web.whatsapp.com/'>WhatsApp</a><br>
+<a data-from-md title='https://www.linkedin.com/' href='https://www.linkedin.com/'>LinkedIn</a><br>
+<a data-from-md title='https://zoom.us/join' href='https://zoom.us/join'>Zoom</a><br>
+<a data-from-md title='https://discord.com/channels/%40me' href='https://discord.com/channels/%40me'>Discord</a><br>
+<a data-from-md title='http://address.yahoo.com/' href='http://address.yahoo.com/'>Y! Contacts</a><br>
+<a data-from-md title='http://192.168.1.125:8888/' href='http://192.168.1.125:8888/'>AirDroid</a><br>
+<a data-from-md title='https://remotedesktop.google.com/access' href='https://remotedesktop.google.com/access'>Remote Desktop</a><br>
+<a data-from-md title='http://www.gotransit.com/' href='http://www.gotransit.com/'>GO Transit</a><br>
+<a data-from-md title='http://www.prestocard.ca/' href='http://www.prestocard.ca/'>Presto</a> - rchaipr / L1n...<br>
+<a data-from-md title='https://urgentcarecentre.ca/' href='https://urgentcarecentre.ca/'>Walk-in (Urgent Care)</a><br>
+<a data-from-md title='https://www.dynacare.ca/' href='https://www.dynacare.ca/'>Dynacare</a> (<a data-from-md title='https://www.dynacareplus.com/' href='https://www.dynacareplus.com/'>Plus</a>)<br>
+<a data-from-md title='https://peelregion.ca/waste/collection-schedules/collection-calendar?action=search&amp;town=&amp;query=19+Linstock+Dr%2C+Brampton' href='https://peelregion.ca/waste/collection-schedules/collection-calendar?action=search&amp;town=&amp;query=19+Linstock+Dr%2C+Brampton'>Garbage</a><br>
+<a data-from-md title='https://games.bramptonguardian.com/' href='https://games.bramptonguardian.com/'>Brampton Guardian Games</a><br>
+<a data-from-md title='https://www.uber.com' href='https://www.uber.com'>Uber</a><br>
+<a data-from-md title='https://www.ubereats.com' href='https://www.ubereats.com'>Uber Eats</a></p>
+<p><a data-from-md title='https://www.nytimes.com/interactive/2021/world/canada-covid-cases.html' href='https://www.nytimes.com/interactive/2021/world/canada-covid-cases.html'>Covid/Canada</a><br>
+<a data-from-md title='https://www.nytimes.com/interactive/2021/us/covid-cases.html' href='https://www.nytimes.com/interactive/2021/us/covid-cases.html'>Covid/US</a></p>
+<h2 id="mail">Mail</h2>
+<p><a data-from-md title='http://mail.yahoo.com/' href='http://mail.yahoo.com/'>Rogers</a><br>
+<a data-from-md title='https://outlook.com' href='https://outlook.com'>Kevlex</a></p>
+<h2 id="banking">Banking</h2>
+<p><a data-from-md title='http://www.bmo.com/' href='http://www.bmo.com/'>BMO</a><br>
+<a data-from-md title='http://www.bmoinvestorline.com/' href='http://www.bmoinvestorline.com/'>Investorline</a> (<a data-from-md title='http://api.bmoinvestorline.com/mobile' href='http://api.bmoinvestorline.com/mobile'>mobile</a>)<br>
+<a data-from-md title='http://www.tdcanadatrust.com/' href='http://www.tdcanadatrust.com/'>TD</a><br>
+<a data-from-md title='https://rogersbank.com/' href='https://rogersbank.com/'>Mastercard (Rogers)</a></p>
+<h2 id="finance">Finance</h2>
+<p><a data-from-md title='http://www.407etr.com/' href='http://www.407etr.com/'>407 ETR</a><br>
+<a data-from-md title='http://www1.royalbank.com/english/ris/pcd/sgne.html' href='http://www1.royalbank.com/english/ris/pcd/sgne.html'>RBC DS</a><br>
+<a data-from-md title='http://myaccount.yak.ca/login.aspx' href='http://myaccount.yak.ca/login.aspx'>Yak</a><br>
+<a data-from-md title='http://www.americanexpress.com/canada/' href='http://www.americanexpress.com/canada/'>Amex</a><br>
+<a data-from-md title='https://rogersbank.com/' href='https://rogersbank.com/'>Mastercard (Rogers)</a><br>
+<a data-from-md title='http://www.cibconline.cibc.com/' href='http://www.cibconline.cibc.com/'>CIBC</a><br>
+<a data-from-md title='http://www.paypal.com' href='http://www.paypal.com'>PayPal</a><br>
+<a data-from-md title='https://www.canada.ca/en/revenue-agency/services/e-services/payment-save-time-pay-online.html' href='https://www.canada.ca/en/revenue-agency/services/e-services/payment-save-time-pay-online.html'>HST / Taxes</a><br>
+<a data-from-md title='https://myaccount.enbridgegas.com/' href='https://myaccount.enbridgegas.com/'>Enbridge</a><br>
+<a data-from-md title='https://myalectra.alectrautilities.com/portal/#/login' href='https://myalectra.alectrautilities.com/portal/#/login'>Alectra</a><br>
+<a data-from-md title='http://www.bell.ca/' href='http://www.bell.ca/'>Bell</a><br>
+<a data-from-md title='http://www.rogers.com/web/totes/#/viewbill' href='http://www.rogers.com/web/totes/#/viewbill'>Rogers</a><br>
+<a data-from-md title='https://www.fido.ca/' href='https://www.fido.ca/'>Fido</a><br>
+<a data-from-md title='http://peelregion.ca/waterbills' href='http://peelregion.ca/waterbills'>Peel Water</a><br>
+<a data-from-md title='http://www.epost.ca/' href='http://www.epost.ca/'>epost</a><br>
+<a data-from-md title='https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html' href='https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html'>CRA Personal</a> - Wag...<br>
+<a data-from-md title='https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account.html' href='https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account.html'>CRA Business</a> - Wag...</p>
+<h2 id="kevlex">Kevlex</h2>
+<p><a data-from-md title='http://www.cra-arc.gc.ca/mybusinessaccount/' href='http://www.cra-arc.gc.ca/mybusinessaccount/'>CRA Business</a><br>
+<a data-from-md title='https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa' href='https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa'>iTunes Connect</a><br>
+<a data-from-md title='http://adwords.google.com/' href='http://adwords.google.com/'>Google AdWords</a></p>
+<h2 id="investing">Investing</h2>
+<p><a data-from-md title='https://finance.yahoo.com/portfolio/pf_1/view/view_2' href='https://finance.yahoo.com/portfolio/pf_1/view/view_2'>Y! Holdings</a><br>
+<a data-from-md title='https://finance.yahoo.com/portfolio/p_3/view/view_0' href='https://finance.yahoo.com/portfolio/p_3/view/view_0'>Y! Hot</a><br>
+<a data-from-md title='https://finance.yahoo.com/portfolio/p_1/view/view_6' href='https://finance.yahoo.com/portfolio/p_1/view/view_6'>Y! Sectors</a><br>
+<a data-from-md title='https://finance.yahoo.com/portfolio/p_2/view/view_0' href='https://finance.yahoo.com/portfolio/p_2/view/view_0'>Y! Barometer</a><br>
+<a data-from-md title='https://www.zacks.com/portfolios/my-stock-portfolio/?icid=home-home-nav_tracking-zcom-main_menu_wrapper-my_portfolio' href='https://www.zacks.com/portfolios/my-stock-portfolio/?icid=home-home-nav_tracking-zcom-main_menu_wrapper-my_portfolio'>Zacks</a><br>
+<a data-from-md title='https://www.cnbc.com/' href='https://www.cnbc.com/'>CNBC</a><br>
+<a data-from-md title='https://www.cnbc.com/5-things-to-know/' href='https://www.cnbc.com/5-things-to-know/'>CNBC/5 things</a><br>
+<a data-from-md title='https://www.cnbc.com/morning-brief/' href='https://www.cnbc.com/morning-brief/'>CNBC/Morning Brief</a><br>
+<a data-from-md title='https://www.cnbc.com/market-insider/' href='https://www.cnbc.com/market-insider/'>CNBC/Market Insider</a><br>
+<a data-from-md title='https://www.cnbc.com/cnbc-pro-playbooks-and-newsletters/' href='https://www.cnbc.com/cnbc-pro-playbooks-and-newsletters/'>CNBC/Next Session Moves</a><br>
+<a data-from-md title='https://www.marketwatch.com/' href='https://www.marketwatch.com/'>MarketWatch</a><br>
+<a data-from-md title='https://www.barrons.com/' href='https://www.barrons.com/'>Barron's</a><br>
+<a data-from-md title='https://www.msn.com/en-us/money' href='https://www.msn.com/en-us/money'>MSN Money</a><br>
+<a data-from-md title='https://www.tipranks.com/trending-stocks' href='https://www.tipranks.com/trending-stocks'>TipRanks</a><br>
+<a data-from-md title='https://finance.yahoo.com/lookup' href='https://finance.yahoo.com/lookup'>Y! Quote</a><br>
+<a data-from-md title='https://www.benzinga.com/' href='https://www.benzinga.com/'>Benzinga</a><br>
+<a data-from-md title='https://www.marketbeat.com/' href='https://www.marketbeat.com/'>MarketBeat</a><br>
+<a data-from-md title='https://www.earningswhispers.com/' href='https://www.earningswhispers.com/'>Earnings</a></p>
+<p><a data-from-md title='https://members.blackboxstocks.com/blackbox' href='https://members.blackboxstocks.com/blackbox'>BlackBox</a><br>
+<a data-from-md title='https://discord.com/channels/290278814217535489/298473806043807754' href='https://discord.com/channels/290278814217535489/298473806043807754'>BlackBox/Discord</a></p>
+<p><a data-from-md title='https://www.fool.com/premium/stock-advisor/' href='https://www.fool.com/premium/stock-advisor/'>Fool</a><br>
+<a data-from-md title='https://www.fool.com/premium/coverage/tags/buy-recommendation' href='https://www.fool.com/premium/coverage/tags/buy-recommendation'>Fool/Buys</a><br>
+<a data-from-md title='https://www.fool.com/premium/coverage/tags/best_buys_now' href='https://www.fool.com/premium/coverage/tags/best_buys_now'>Fool/Best Buys Now</a><br>
+<a data-from-md title='https://www.fool.com/premium/stock-advisor/recommendations/active/' href='https://www.fool.com/premium/stock-advisor/recommendations/active/'>Fool/Performance</a></p>
+<p><a data-from-md title='https://finance.yahoo.com/quote/w' href='https://finance.yahoo.com/quote/w'>Y!Finance/W</a><br>
+<a data-from-md title='https://swaggystocks.com/dashboard/wallstreetbets/ticker-sentiment/w' href='https://swaggystocks.com/dashboard/wallstreetbets/ticker-sentiment/w'>Swaggy/W</a><br>
+<a data-from-md title='https://stocktwits.com/symbol/w' href='https://stocktwits.com/symbol/w'>Stocktwits/W</a><br>
+<a data-from-md title='https://www.benzinga.com/quote/W' href='https://www.benzinga.com/quote/W'>Benzinga/W</a><br>
+<a data-from-md title='https://www.zacks.com/stock/quote/w' href='https://www.zacks.com/stock/quote/w'>Zacks/W</a><br>
+<a data-from-md title='https://www.earningswhispers.com/stocks/w' href='https://www.earningswhispers.com/stocks/w'>EarningsWhispers/W</a><br>
+<a data-from-md title='https://www.tipranks.com/stocks/w/stock-analysis' href='https://www.tipranks.com/stocks/w/stock-analysis'>TipRanks/Analysis/W</a><br>
+<a data-from-md title='https://www.tipranks.com/stocks/w/forecast' href='https://www.tipranks.com/stocks/w/forecast'>TipRanks/Analysts/W</a><br>
+<a data-from-md title='https://www.alphaquery.com/stock/W/volatility-option-statistics/10-day/put-call-ratio-oi' href='https://www.alphaquery.com/stock/W/volatility-option-statistics/10-day/put-call-ratio-oi'>Put-Call Ratio/W</a><br>
+<a data-from-md title='https://www.thestreet.com/search?query=Wayfair' href='https://www.thestreet.com/search?query=Wayfair'>TheStreet/Wayfair</a></p>
+<p><a data-from-md title='https://finance.yahoo.com/lookup' href='https://finance.yahoo.com/lookup'>Y!Finance/Quote</a><br>
+<a data-from-md title='https://www.tradingview.com/chart/?symbol=UDOW' href='https://www.tradingview.com/chart/?symbol=UDOW'>TradingView</a><br>
+<a data-from-md title='https://www.tipranks.com/smart-portfolio/holdings/news' href='https://www.tipranks.com/smart-portfolio/holdings/news'>TipRanks</a><br>
+<a data-from-md title='https://www.tipranks.com/trending-stocks' href='https://www.tipranks.com/trending-stocks'>TipRanks/Trending</a><br>
+<a data-from-md title='https://www.investing.com/markets/united-states' href='https://www.investing.com/markets/united-states'>Markets</a><br>
+<a data-from-md title='https://www.thestreet.com/markets' href='https://www.thestreet.com/markets'>TheStreet/Markets</a><br>
+<a data-from-md title='https://www.bloomberg.com/markets/sectors' href='https://www.bloomberg.com/markets/sectors'>Sectors</a><br>
+<a data-from-md title='https://www.barchart.com/options/unusual-activity/stocks' href='https://www.barchart.com/options/unusual-activity/stocks'>Options Activity</a><br>
+<a data-from-md title='https://hedgefollow.com/latest-activity.php' href='https://hedgefollow.com/latest-activity.php'>Hedge Fund Activity</a></p>
+<p><a data-from-md title='https://www.marketwatch.com/market-data/us' href='https://www.marketwatch.com/market-data/us'>Advance/Decline</a><br>
+<a data-from-md title='https://www.barchart.com/stocks/quotes/%24CPC/overview' href='https://www.barchart.com/stocks/quotes/%24CPC/overview'>Put/Call Ratios</a><br>
+<a data-from-md title='https://money.cnn.com/data/fear-and-greed/' href='https://money.cnn.com/data/fear-and-greed/'>CNN Fear &amp; Greed</a><br>
+<a data-from-md title='https://www.ssga.com/uk/en_gb/institutional/etfs/insights/sector-etf-momentum-map' href='https://www.ssga.com/uk/en_gb/institutional/etfs/insights/sector-etf-momentum-map'>Sector Momentum</a><br>
+<a data-from-md title='https://www.barchart.com/futures/quotes/VI%2A0/futures-prices' href='https://www.barchart.com/futures/quotes/VI%2A0/futures-prices'>VIX Futures</a> (Backwardation)<br>
+<a data-from-md title='https://ycharts.com/indicators/reports/aaii_sentiment_survey' href='https://ycharts.com/indicators/reports/aaii_sentiment_survey'>AAII Sentiment Survey</a><br>
+<a data-from-md title='https://www.naaim.org/programs/naaim-exposure-index/' href='https://www.naaim.org/programs/naaim-exposure-index/'>NAAIM Exposure Index</a> (Institutional exposure to equities)<br>
+<a data-from-md title='https://tradingeconomics.com/united-states/consumer-confidence' href='https://tradingeconomics.com/united-states/consumer-confidence'>University Of Michigan Consumer Sentiment Index</a><br>
+<a data-from-md title='https://ycharts.com/indicators/reports/finra_margin_statistics' href='https://ycharts.com/indicators/reports/finra_margin_statistics'>Margin Debt</a><br>
+<a data-from-md title='https://ycharts.com/indicators/us_corporate_bbb_optionadjusted_spread' href='https://ycharts.com/indicators/us_corporate_bbb_optionadjusted_spread'>BBB Spreads</a><br>
+<a data-from-md title='https://schrts.co/jaxsaQJG' href='https://schrts.co/jaxsaQJG'>High Yield Spreads</a></p>
+<p><a data-from-md title='https://ycharts.com/indicators/10_year_tipstreasury_breakeven_rate' href='https://ycharts.com/indicators/10_year_tipstreasury_breakeven_rate'>10 Year Breakeven Inflation</a><br>
+<a data-from-md title='https://schrts.co/PcbIjjUN' href='https://schrts.co/PcbIjjUN'>McClellan Oscillator</a><br>
+<a data-from-md title='https://schrts.co/WjXRvDSh' href='https://schrts.co/WjXRvDSh'>% Stocks Above DMA</a><br>
+<a data-from-md title='https://www.etf.com/etfanalytics/etf-fund-flows-tool' href='https://www.etf.com/etfanalytics/etf-fund-flows-tool'>ETF Fund Flows</a><br>
+<a data-from-md title='https://www.etfchannel.com/' href='https://www.etfchannel.com/'>ETF Channel</a><br>
+<a data-from-md title='https://www.etfrc.com/' href='https://www.etfrc.com/'>ETF Research Center</a></p>
+<p><a data-from-md title='https://www.theglobeandmail.com/investing/markets/currencies/CADUSD/' href='https://www.theglobeandmail.com/investing/markets/currencies/CADUSD/'>CDN - Globe &amp; Mail</a><br>
+<a data-from-md title='http://www.rbc.com/economics/economic-reports/pdf/financial-markets/rates.pdf' href='http://www.rbc.com/economics/economic-reports/pdf/financial-markets/rates.pdf'>CDN - RBC</a><br>
+<a data-from-md title='https://www.nbc.ca/content/dam/bnc/en/rates-and-analysis/economic-analysis/forex.pdf' href='https://www.nbc.ca/content/dam/bnc/en/rates-and-analysis/economic-analysis/forex.pdf'>CDN - NBC</a><br>
+<a data-from-md title='https://www.interchangefinancial.com/canadian-dollar-forecast/' href='https://www.interchangefinancial.com/canadian-dollar-forecast/'>CDN - Interchange</a><br>
+<a data-from-md title='https://finance.yahoo.com/topic/crypto/' href='https://finance.yahoo.com/topic/crypto/'>Y! Crypto</a></p>
+<p><a data-from-md title='https://www.cnbc.com/' href='https://www.cnbc.com/'>CNBC</a> (<a data-from-md title='https://www.cnbc.com/podcast/' href='https://www.cnbc.com/podcast/'>Podcasts</a>)<br>
+<a data-from-md title='https://www.marketwatch.com/latest-news' href='https://www.marketwatch.com/latest-news'>MarketWatch</a><br>
+<a data-from-md title='https://www.cnbc.com/mad-money/' href='https://www.cnbc.com/mad-money/'>Mad Money</a><br>
+<a data-from-md title='https://twitter.com/TheStreet' href='https://twitter.com/TheStreet'>TheStreet/Twitter</a><br>
+<a data-from-md title='https://jeffhirsch.tumblr.com/' href='https://jeffhirsch.tumblr.com/'>Stock Trader's Almanac Blog</a><br>
+<a data-from-md title='https://www.bnnbloomberg.ca/' href='https://www.bnnbloomberg.ca/'>BNN Bloomberg</a><br>
+<a data-from-md title='https://www.bnnbloomberg.ca/live' href='https://www.bnnbloomberg.ca/live'>Bloomberg Canada TV</a><br>
+<a data-from-md title='https://www.youtube.com/@markets' href='https://www.youtube.com/@markets'>Bloomberg TV</a><br>
+<a data-from-md title='https://www.youtube.com/@SchwabNetwork/videos' href='https://www.youtube.com/@SchwabNetwork/videos'>Schwab Network TV</a><br>
+<a data-from-md title='http://www.reuters.com/' href='http://www.reuters.com/'>Reuters</a><br>
+<a data-from-md title='https://www.youtube.com/@Reuters/videos' href='https://www.youtube.com/@Reuters/videos'>Reuters TV</a><br>
+<a data-from-md title='https://www.moneytalkgo.com/' href='https://www.moneytalkgo.com/'>MoneyTalk</a><br>
+<a data-from-md title='https://www.investing.com/portfolio/?portfolioID=YGQ%252FbTNnNGtlMWliM2czMA%253D%253D' href='https://www.investing.com/portfolio/?portfolioID=YGQ%252FbTNnNGtlMWliM2czMA%253D%253D'>Investing.com</a><br>
+<a data-from-md title='https://www.680news.com/category/business/' href='https://www.680news.com/category/business/'>680 Biz News</a><br>
+<a data-from-md title='https://www.benzinga.com/' href='https://www.benzinga.com/'>Benzinga</a> (<a data-from-md title='https://quotes.benzinga.com/' href='https://quotes.benzinga.com/'>Quotes</a>)<br>
+<a data-from-md title='https://stocktwits.com/symbol/googl' href='https://stocktwits.com/symbol/googl'>Stocktwits</a><br>
+<a data-from-md title='https://swaggystocks.com/dashboard/wallstreetbets/ticker-sentiment' href='https://swaggystocks.com/dashboard/wallstreetbets/ticker-sentiment'>Swaggy Stocks</a><br>
+<a data-from-md title='https://www.reddit.com/r/wallstreetbets/' href='https://www.reddit.com/r/wallstreetbets/'>Wallstreetbets</a></p>
+<p><a data-from-md title='https://money.cnn.com/quote/quote.html?symb=GOOGL' href='https://money.cnn.com/quote/quote.html?symb=GOOGL'>CNNMoney</a><br>
+<a data-from-md title='https://www.zacks.com/' href='https://www.zacks.com/'>Zacks</a><br>
+<a data-from-md title='https://finance.yahoo.com/' href='https://finance.yahoo.com/'>Y! Finance</a><br>
+<a data-from-md title='https://finance.yahoo.com/calendar/earnings' href='https://finance.yahoo.com/calendar/earnings'>Y! Earnings</a><br>
+<a data-from-md title='https://tradingeconomics.com/calendar' href='https://tradingeconomics.com/calendar'>Economic Calendar</a><br>
+<a data-from-md title='https://www.marketwatch.com/economy-politics/calendar' href='https://www.marketwatch.com/economy-politics/calendar'>Economic Calendar MW</a><br>
+<a data-from-md title='https://www.earningswhispers.com/' href='https://www.earningswhispers.com/'>Earnings Whispers</a><br>
+<a data-from-md title='http://www.optionistics.com/quotes/option-prices' href='http://www.optionistics.com/quotes/option-prices'>Optionistics</a></p>
+<p><a data-from-md title='https://www.google.com/search?q=insidermonkey.com+cramer' href='https://www.google.com/search?q=insidermonkey.com+cramer'>Jim Cramer / Insider Monkey</a><br>
+<a data-from-md title='https://x.com/jimcramer' href='https://x.com/jimcramer'>Jim Cramer / X</a></p>
+<p><a data-from-md title='https://robintrack.net/popularity_changes' href='https://robintrack.net/popularity_changes'>Robintrack</a><br>
+<a data-from-md title='http://bigcharts.marketwatch.com/' href='http://bigcharts.marketwatch.com/'>BigCharts</a><br>
+<a data-from-md title='http://investorplace.com/' href='http://investorplace.com/'>InvestorPlace</a><br>
+<a data-from-md title='http://www.bloomberg.com/quote/CL1:COM' href='http://www.bloomberg.com/quote/CL1:COM'>WTI Oil</a><br>
+<a data-from-md title='https://www.kitco.com/' href='https://www.kitco.com/'>Kitco Gold</a></p>
+<p><a data-from-md title='https://infomemo.theocc.com/infomemo/search' href='https://infomemo.theocc.com/infomemo/search'>Strike Price Adjustments</a></p>
+<h2 id="photography">Photography</h2>
+<p><a data-from-md title='https://500px.com/' href='https://500px.com/'>500px</a><br>
+<a data-from-md title='https://onedrive.live.com/' href='https://onedrive.live.com/'>OneDrive</a><br>
+<a data-from-md title='https://1drv.ms/f/c/2d8fe15f68718959/ElmJcWhf4Y8ggC1oAAAAAAABRW7ZfvCFIVtVOMcOEjpMPg?e=867Ag5' href='https://1drv.ms/f/c/2d8fe15f68718959/ElmJcWhf4Y8ggC1oAAAAAAABRW7ZfvCFIVtVOMcOEjpMPg?e=867Ag5'>OneDrive - Pics</a><br>
+<a data-from-md title='https://www.pix-star.com/albums/list/' href='https://www.pix-star.com/albums/list/'>Pix-Star</a></p>
+<p><a data-from-md title='https://1drv.ms/f/s%21AlmJcWhf4Y8tgVOeknoUO9IEAQ6y' href='https://1drv.ms/f/s%21AlmJcWhf4Y8tgVOeknoUO9IEAQ6y'>OneDrive - Artistic Pics</a><br>
+<a data-from-md title='http://www.suncalc.org/' href='http://www.suncalc.org/'>Sun</a><br>
+<a data-from-md title='http://www.mooncalc.org/' href='http://www.mooncalc.org/'>Moon</a><br>
+<a data-from-md title='http://www.ontariotravel.net/publications/fallcolourreport.pdf' href='http://www.ontariotravel.net/publications/fallcolourreport.pdf'>Ontario fall color report</a> (every Thursday)<br>
+<a data-from-md title='http://www.ontarioparks.com/fallcolour' href='http://www.ontarioparks.com/fallcolour'>Fall Colors</a><br>
+<a data-from-md title='http://www.gi.alaska.edu/AuroraForecast/NorthAmerica/' href='http://www.gi.alaska.edu/AuroraForecast/NorthAmerica/'>Northern Lights</a> (updated every Monday at noon UTC)<br>
+<a data-from-md title='https://www.spaceweatherlive.com/en/moon-phases-calendar.html' href='https://www.spaceweatherlive.com/en/moon-phases-calendar.html'>Moon Calendar</a><br>
+<a data-from-md title='http://www.lightpollutionmap.info/#zoom=9&amp;lat=5448362&amp;lon=-8897826&amp;layers=B0TFFFFFFF' href='http://www.lightpollutionmap.info/#zoom=9&amp;lat=5448362&amp;lon=-8897826&amp;layers=B0TFFFFFFF'>Light Pollution</a><br>
+<a data-from-md title='http://www.scantips.com/lights/fieldofview.html' href='http://www.scantips.com/lights/fieldofview.html'>Lens field of view</a><br>
+<a data-from-md title='http://theartofphotography.tv/episodes/' href='http://theartofphotography.tv/episodes/'>The Art of Photography</a></p>
+<h2 id="news">News</h2>
+<p><a data-from-md title='http://torontostar.newspaperdirect.com/epaper/viewer.aspx' href='http://torontostar.newspaperdirect.com/epaper/viewer.aspx'>The Star</a> - rchai.g@gmail.com / W@g...<br>
+<a data-from-md title='http://680news.com/' href='http://680news.com/'>680News</a> (<a data-from-md title='http://m.680news.com/' href='http://m.680news.com/'>mobile</a>)<br>
+<a data-from-md title='http://www.bramptonguardian.com/' href='http://www.bramptonguardian.com/'>Brampton Guardian</a> (<a data-from-md title='http://m.bramptonguardian.com/' href='http://m.bramptonguardian.com/'>mobile</a>) (<a data-from-md title='https://www.bramptonguardian.com/community-static/2545789-brampton-guardian-print-editions/' href='https://www.bramptonguardian.com/community-static/2545789-brampton-guardian-print-editions/'>Print Edition</a>)<br>
+<a data-from-md title='https://x.com/CityBrampton' href='https://x.com/CityBrampton'>City of Brampton / X</a><br>
+<a data-from-md title='https://x.com/PeelPolice' href='https://x.com/PeelPolice'>Peel Police / X</a><br>
+<a data-from-md title='https://toronto.ctvnews.ca/' href='https://toronto.ctvnews.ca/'>CTV News</a><br>
+<a data-from-md title='http://money.cnn.com/' href='http://money.cnn.com/'>CNN Money</a> (<a data-from-md title='http://cnnmoney.mobi/' href='http://cnnmoney.mobi/'>mobile</a>)<br>
+<a data-from-md title='http://www.wsj.com/video' href='http://www.wsj.com/video'>WSJ Videos</a><br>
+<a data-from-md title='http://www.bloomberg.com/' href='http://www.bloomberg.com/'>Bloomberg</a></p>
+<h2 id="brampton">Brampton</h2>
+<p><a data-from-md title='http://www.brampton.ca/EN/residents/Parking/Pages/Permission-to-Park.aspx' href='http://www.brampton.ca/EN/residents/Parking/Pages/Permission-to-Park.aspx'>Street Parking</a> <a data-from-md title='https://www.peelpolice.ca/en/in-the-community/crime-statistics-and-maps.aspx/' href='https://www.peelpolice.ca/en/in-the-community/crime-statistics-and-maps.aspx/'>Peel Crime</a> (<a data-from-md title='https://mycommunitywatch.org/' href='https://mycommunitywatch.org/'>My Community Watch</a>)<br>
+<a data-from-md title='https://www.311brampton.ca/' href='https://www.311brampton.ca/'>Brampton Service</a> (905-874-2000 or 311 - Noise, Animal Services, Parks)<br>
+<a data-from-md title='http://brampton.alectrautilities.com/outages' href='http://brampton.alectrautilities.com/outages'>Brampton Power Outage</a></p>
+<h2 id="misc">Misc</h2>
+<p><a data-from-md title='https://android.com/find' href='https://android.com/find'>Find My Device</a><br>
+<a data-from-md title='https://www.flightaware.com/' href='https://www.flightaware.com/'>Flight Aware</a><br>
+<a data-from-md title='http://www.westjet.com/' href='http://www.westjet.com/'>WestJet</a> - 1-888-937-8538<br>
+<a data-from-md title='http://www.aircanada.com/' href='http://www.aircanada.com/'>AirCanada</a> (<a data-from-md title='http://mobile.aircanada.com/' href='http://mobile.aircanada.com/'>mobile</a>) - 1-888-247-2262<br>
+<a data-from-md title='https://www.flyporter.com/en-ca/' href='https://www.flyporter.com/en-ca/'>Porter</a> 1-888-619-8622<br>
+<a data-from-md title='http://www.airtransat.com/' href='http://www.airtransat.com/'>Airtransat</a> - 1-877-872-6728<br>
+<a data-from-md title='http://en.aegeanair.com/' href='http://en.aegeanair.com/'>Aegean</a> - Italy - (+39) 069 7150532-33<br>
+<a data-from-md title='https://www.hpibet.com/' href='https://www.hpibet.com/'>HorsePlay</a> (<a data-from-md title='https://m.horseplayerinteractive.com/' href='https://m.horseplayerinteractive.com/'>mobile</a>)<br>
+<a data-from-md title='https://www.ticketmaster.ca/' href='https://www.ticketmaster.ca/'>Ticketmaster</a> (<a data-from-md title='https://www.ticketmaster.ca/mobile' href='https://www.ticketmaster.ca/mobile'>mobile</a>)<br>
+<a data-from-md title='https://www.costcopharmacy.ca/' href='https://www.costcopharmacy.ca/'>Costco Pharmacy</a><br>
+<a data-from-md title='https://ca.camelcamelcamel.com/' href='https://ca.camelcamelcamel.com/'>Amazon Price History</a><br>
+<a data-from-md title='https://www.evernote.com/shard/s7/sh/f87c5938-4ce7-4144-a62c-85df406f45af/dbb8041415a955f23d2bcc318e70c5ba' href='https://www.evernote.com/shard/s7/sh/f87c5938-4ce7-4144-a62c-85df406f45af/dbb8041415a955f23d2bcc318e70c5ba'>BBQ Recipes</a><br>
+<a data-from-md title='http://www.caloriecount.com/' href='http://www.caloriecount.com/'>Calorie Count</a><br>
+<a data-from-md title='http://affiliate.zap2it.com/tvlistings' href='http://affiliate.zap2it.com/tvlistings'>TV Guide</a><br>
+<a data-from-md title='http://www.olg.ca/' href='http://www.olg.ca/'>OLG</a><br>
+<a data-from-md title='http://www.online-stopwatch.com/full-screen-stopwatch/' href='http://www.online-stopwatch.com/full-screen-stopwatch/'>Stopwatch</a><br>
+<a data-from-md title='https://www.rogers.com/web/myrogers/internetUsageBeta?actionTab=DayToDay' href='https://www.rogers.com/web/myrogers/internetUsageBeta?actionTab=DayToDay'>Internet Usage</a><br>
+<a data-from-md title='https://mobile.twitter.com/rogershelps' href='https://mobile.twitter.com/rogershelps'>Rogers / Twitter</a><br>
+<a data-from-md title='http://rogers.com/outage' href='http://rogers.com/outage'>Rogers Outage</a><br>
+<a data-from-md title='https://istheservicedowncanada.com/status/rogers/5907364-brampton-ontario-canada' href='https://istheservicedowncanada.com/status/rogers/5907364-brampton-ontario-canada'>Rogers Outage Map</a><br>
+<a data-from-md title='http://torontostar.newspaperdirect.com/' href='http://torontostar.newspaperdirect.com/'>The Star</a><br>
+<a data-from-md title='http://www.mto.gov.on.ca/english/traveller/trip/map.shtml?ll=43.696424%2C-79.459648&amp;z=10' href='http://www.mto.gov.on.ca/english/traveller/trip/map.shtml?ll=43.696424%2C-79.459648&amp;z=10'>Traffic CAMs</a><br>
+<a data-from-md title='https://www.alltrails.com/' href='https://www.alltrails.com/'>AllTrails</a><br>
+<a data-from-md title='https://trackbook.online/' href='https://trackbook.online/'>Tracebook</a><br>
+<a data-from-md title='http://www.webproxy.net/' href='http://www.webproxy.net/'>Web Proxy</a><br>
+<a data-from-md title='https://www.freeformatter.com/xml-formatter.html' href='https://www.freeformatter.com/xml-formatter.html'>XML Formatter</a><br>
+<a data-from-md title='https://www.developertoolkits.com/ocr/image-to-text-converter' href='https://www.developertoolkits.com/ocr/image-to-text-converter'>OCR</a><br>
+<a data-from-md title='http://whiteboardfox.com/' href='http://whiteboardfox.com/'>Whiteboard Fox</a><br>
+<a data-from-md title='http://www.greetingsisland.com/' href='http://www.greetingsisland.com/'>Greetings Island Cards</a><br>
+<a data-from-md title='https://www.jigsawplanet.com/' href='https://www.jigsawplanet.com/'>Jigsaw Puzzles</a><br>
+<a data-from-md title='https://online-go.com/' href='https://online-go.com/'>OGS</a> - rc.og / dragon...<br>
+<a data-from-md title='https://www.pokernow.club/' href='https://www.pokernow.club/'>Poker</a><br>
+<a data-from-md title='https://read.amazon.ca/' href='https://read.amazon.ca/'>Kindle</a><br>
+<a data-from-md title='https://pluto.tv' href='https://pluto.tv'>Pluto TV</a><br>
+<a data-from-md title='https://support.swann.com/' href='https://support.swann.com/'>Swann Security Support</a></p>
+<h2 id="us-border-crossings">US Border Crossings</h2>
+<p><a data-from-md title='http://travel.gc.ca/travelling/border-times-us' href='http://travel.gc.ca/travelling/border-times-us'>To US (wait times)</a></p>
+<ul>
+<li><a data-from-md title='http://apps.cbp.gov/bwt/mobile.asp' href='http://apps.cbp.gov/bwt/mobile.asp'>US Border</a></li>
+<li>Buffalo/Niagara Falls</li>
+<li>Alexandria Bay</li>
+<li>Ogdensburg</li>
+</ul>
+<p><a data-from-md title='http://travel.gc.ca/returning/border-times' href='http://travel.gc.ca/returning/border-times'>To Canada (wait times)</a></p>
+<ul>
+<li>Rainbow Bridge</li>
+<li>Queenston-Lewiston Bridge</li>
+<li>Thousand Island Bridge</li>
+<li>Prescott</li>
+</ul>
+<hr>
+<p><a data-from-md title='http://www.evernote.com/l/AAcuDtRmXMtBqLy36s3IBDfGsKqS5h3Wf9f/' href='http://www.evernote.com/l/AAcuDtRmXMtBqLy36s3IBDfGsKqS5h3Wf9f/'>http://www.evernote.com/l/AAcuDtRmXMtBqLy36s3IBDfGsKqS5h3Wf9f/</a></p>
+<p><a data-from-md title='https://dtw3.w3spaces.com/AAcuDtRmXMtBqLy36s3IBDfGsKqS5h3Wf9f/bookmarks.html' href='https://dtw3.w3spaces.com/AAcuDtRmXMtBqLy36s3IBDfGsKqS5h3Wf9f/bookmarks.html'>https://dtw3.w3spaces.com/AAcuDtRmXMtBqLy36s3IBDfGsKqS5h3Wf9f/bookmarks.html</a></p>
+<hr>
+<h2 id="export-to-evernote">Export to Evernote</h2>
+<ol>
+<li>
+<p>Joplin&gt; Export as HTML Directory</p>
+</li>
+<li>
+<p>PowerShell (in folder with .html file)&gt;</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="ps" data-joplin-source-open="```ps&#10;" data-joplin-source-close="&#10;```">gci *.html | %{(Get-Content -raw -literalPath $_) -replace '&lt;h(\d.+?\n)(?:&lt;p&gt;)?', '&lt;p/&gt;&lt;h$1' -replace '&lt;br&gt;', '&lt;p/&gt;' -replace '&lt;p&gt;', '&lt;p&gt;&lt;p/&gt;' -replace '&lt;/p&gt;', '&lt;/p&gt;&lt;p/&gt;' | Set-Content -literalPath $_}</pre><pre class="hljs"><code><span class="hljs-built_in">gci</span> *.html | %{(<span class="hljs-built_in">Get-Content</span> <span class="hljs-literal">-raw</span> <span class="hljs-literal">-literalPath</span> <span class="hljs-variable">$_</span>) <span class="hljs-operator">-replace</span> <span class="hljs-string">&#x27;&lt;h(\d.+?\n)(?:&lt;p&gt;)?&#x27;</span>, <span class="hljs-string">&#x27;&lt;p/&gt;&lt;h$1&#x27;</span> <span class="hljs-operator">-replace</span> <span class="hljs-string">&#x27;&lt;br&gt;&#x27;</span>, <span class="hljs-string">&#x27;&lt;p/&gt;&#x27;</span> <span class="hljs-operator">-replace</span> <span class="hljs-string">&#x27;&lt;p&gt;&#x27;</span>, <span class="hljs-string">&#x27;&lt;p&gt;&lt;p/&gt;&#x27;</span> <span class="hljs-operator">-replace</span> <span class="hljs-string">&#x27;&lt;/p&gt;&#x27;</span>, <span class="hljs-string">&#x27;&lt;/p&gt;&lt;p/&gt;&#x27;</span> | <span class="hljs-built_in">Set-Content</span> <span class="hljs-literal">-literalPath</span> <span class="hljs-variable">$_</span>}</code></pre></div>
+</li>
+<li>
+<p>Firefox&gt; Open .html</p>
+</li>
+<li>
+<p>Evernote Web&gt; Copy &lt;Firefox&gt; / Paste &lt;Evernote&gt;</p>
+</li>
+<li>
+<p>Evernote Web&gt; Remove &quot;Export to Evernote&quot; footnote</p>
+</li>
+</ol>
+</div></div>
+					</body>
+				</html>
+			
